@@ -1,0 +1,25 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "ordered-imports": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "no-console": [false],
+    "object-literal-sort-keys": false,
+    "class-name": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "semicolon": [true, "always"],
+    "triple-equals": [true, "allow-null-check"],
+    "typedef": [true],
+    "use-strict": true,
+    "indent": [true, "tabs", 2]
+  },
+  "rulesDirectory": []
+}
