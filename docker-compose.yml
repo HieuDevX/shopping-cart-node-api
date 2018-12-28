@@ -12,6 +12,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./views:/app/views
+      - ./public:/app/public
     ports:
       - "3001:3000"
     depends_on:
@@ -22,5 +23,10 @@ services:
     image: mongo
     ports:
       - "27018:27017"
+    environment:
+      # - MONGO_INITDB_ROOT_USERNAME=root
+      # - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=shopping
     volumes:
       - ./dist/database:/data/db
+      - ./DbInit:/docker-entrypoint-initdb.d

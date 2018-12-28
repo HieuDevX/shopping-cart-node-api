@@ -32,6 +32,8 @@ import * as morgan from "morgan";
 import * as cors from "cors";
 import {
   MONGODB_URI,
+  MONGODB_USER,
+  MONGODB_PWD,
   SERVER_PORT,
   SERVER_TEST_PORT
 } from "./custom_modules/configs/env-configs";
@@ -39,20 +41,30 @@ import ExceptionCode from "./custom_modules/exceptions/ExceptionCode";
 import Exception from "./custom_modules/exceptions/Exception";
 import routes from "./routes/routes";
 import Logger from "./custom_modules/helpers/log/logger";
+import logger from "./custom_modules/helpers/log/logger";
 
 const app = express();
 const server = http.createServer(app);
+
+const mongoDbOptions = {
+  // user: MONGODB_USER,
+  // pass: MONGODB_PWD,
+  useNewUrlParser: true
+};
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
+app.use("/static", express.static("public"));
 
 if (process.env.NODE_ENV !== "test") {
+  logger.info(`MongoDB options: `);
+  console.log(mongoDbOptions);
   mongoose
     .connect(
       MONGODB_URI,
-      { useNewUrlParser: true }
+      mongoDbOptions
     )
     .then(() => {
       Logger.info(`MongoDB connected`);
@@ -60,6 +72,8 @@ if (process.env.NODE_ENV !== "test") {
     .catch(error => {
       Logger.error(`Failed to connect mongodb`);
       console.log(error);
+      Logger.info(`Mongo connection: `);
+      console.log(mongoose.connection);
     });
 }
 
@@ -70,11 +84,15 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
   try {
     if (mongoose.connection.readyState !== 1) {
       Logger.error(`failed to connect mongodb`);
+      Logger.info(`Mongo connection: `);
+      console.log(mongoose.connection);
 
+      logger.info(`MongoDB options: `);
+      console.log(mongoDbOptions);
       // Reconnect if we can
       await mongoose.connect(
         MONGODB_URI,
-        { useNewUrlParser: true }
+        mongoDbOptions
       );
       Logger.info(`MongoDB connected`);
     }

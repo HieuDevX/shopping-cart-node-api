@@ -8,19 +8,27 @@ services:
     environment:
       - NODE_ENV=dev
       - SERVER_PORT=3000
-      - MONGODB_URI=mongodb://mongodb:27017/shopping
+      - MONGODB_URI=mongodb://mongo:27017/shopping
+      # - MONGO_INITDB_ROOT_USERNAME=root
+      # - MONGO_INITDB_ROOT_PASSWORD=root
     volumes:
       - ./src:/app/src
       - ./views:/app/views
+      - ./public:/app/public
     ports:
       - "3002:3000"
     depends_on:
-      - mongodb
+      - mongo
     links:
-      - mongodb
-  mongodb:
+      - mongo
+  mongo:
     image: mongo
     ports:
       - "27019:27017"
+    environment:
+      # - MONGO_INITDB_ROOT_USERNAME=root
+      # - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=shopping
     volumes:
       - ./database-dev:/data/db
+      - ./DbInit:/docker-entrypoint-initdb.d
