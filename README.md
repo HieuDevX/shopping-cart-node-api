@@ -41,6 +41,7 @@ docker-compose -p shopping-prod up -d
 GET: /categories
 ```
 Ví dụ: GET: http://localhost:3001/categories
+```json
 {
     "data": [
         {
@@ -58,6 +59,7 @@ Ví dụ: GET: http://localhost:3001/categories
         },
     ]
 }
+```
 
 Để lấy categories theo id:
 ```
