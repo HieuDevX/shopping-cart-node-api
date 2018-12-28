@@ -66,6 +66,7 @@ Ví dụ: GET: http://localhost:3001/categories
 GET: /categories/:id
 ```
 Ví dụ: GET: http://localhost:3001/categories/5c25bb28c23c56362f18ada4
+```json
 {
     "data": {
         "_id": "5c25bb28c23c56362f18ada4",
@@ -74,12 +75,14 @@ Ví dụ: GET: http://localhost:3001/categories/5c25bb28c23c56362f18ada4
         "image": "/static/img/category/category1.jpg"
     }
 }
+```
 
 Để lấy tất cả products:
 ```
 GET: /products
 ```
 Ví dụ: http://localhost:3001/products
+```json
 {
     "data": [
         {
@@ -113,12 +116,14 @@ Ví dụ: http://localhost:3001/products
         }
     ]
 }
+```
 
 Để lấy product theo id
 ```
 GET: /products/:pr
 ```
 Ví dụ: GET http://localhost:3001/products/5c25bb28c23c56362f18adad
+```json
 {
     "data": {
         "image": [
@@ -135,12 +140,14 @@ Ví dụ: GET http://localhost:3001/products/5c25bb28c23c56362f18adad
         "categoryId": "5c25bb28c23c56362f18ada4"
     }
 }
+```
 
 Để lấy các product theo categoryId
 ```
 GET: /products/byCategory/:categoryId
 ```
 Ví dụ: GET http://localhost:3001/products/byCategory/5c25bb28c23c56362f18ada4
+``json
 {
     "data": [
         {
@@ -174,3 +181,4 @@ Ví dụ: GET http://localhost:3001/products/byCategory/5c25bb28c23c56362f18ada4
         }
     ]
 }
+```
