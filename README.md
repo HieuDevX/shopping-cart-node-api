@@ -147,7 +147,7 @@ Ví dụ: GET http://localhost:3001/products/5c25bb28c23c56362f18adad
 GET: /products/byCategory/:categoryId
 ```
 Ví dụ: GET http://localhost:3001/products/byCategory/5c25bb28c23c56362f18ada4
-``json
+```json
 {
     "data": [
         {
