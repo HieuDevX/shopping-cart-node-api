@@ -30,5 +30,7 @@ services:
       # - MONGO_INITDB_ROOT_PASSWORD=root
       - MONGO_INITDB_DATABASE=shopping
     volumes:
-      - ./database-dev:/data/db
+      - mongo-dev:/data/db
       - ./DbInit:/docker-entrypoint-initdb.d
+volumes:
+  mongo-dev:
