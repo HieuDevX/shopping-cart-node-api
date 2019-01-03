@@ -1,10 +1,7 @@
 version: "3.7"
 services:
   web:
-    tty: true
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: hieudevx/shopping-prod:v1.0
     environment:
       - NODE_ENV=production
       - SERVER_PORT=3000
