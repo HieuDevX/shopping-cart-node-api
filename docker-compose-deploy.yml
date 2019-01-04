@@ -23,12 +23,11 @@ services:
     environment:
       # - MONGO_INITDB_ROOT_USERNAME=root
       # - MONGO_INITDB_ROOT_PASSWORD=root
-      - MONGO_INITDB_DATABASE=shopping
+      # - MONGO_INITDB_DATABASE=shopping
     volumes:
       - mongo-prod:/data/db
       # - ./DbInit:/docker-entrypoint-initdb.d
       - ./Db-dump:/dump
-    onrun:
-      - mongorestore -d shopping
+    command: bash -c 'mongorestore -d shopping'
 volumes:
   mongo-prod:
