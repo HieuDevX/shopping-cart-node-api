@@ -28,6 +28,6 @@ services:
       - mongo-prod:/data/db
       # - ./DbInit:/docker-entrypoint-initdb.d
       - ./Db-dump:/app/Db-dump
-    command: mongorestore --db shopping ./app/Db-dump/shopping.archive
+    command: mongorestore ./app/Db-dump/
 volumes:
   mongo-prod:
