@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"shopping.categories"},{"v":2,"unique":true,"key":{"name":1.0},"name":"name_1","ns":"shopping.categories"}],"uuid":"50b18625d1e24cdb8b57df21c071c277"}

@@ -27,7 +27,7 @@ services:
     volumes:
       - mongo-prod:/data/db
       # - ./DbInit:/docker-entrypoint-initdb.d
-      - ./Db-dump:/app/Db-dump
-    command: mongorestore -h localhost:27017 --db shopping ./app/Db-dump/
+      - ./Db-dump:/dump
+    command: mongorestore -d shopping
 volumes:
   mongo-prod:
