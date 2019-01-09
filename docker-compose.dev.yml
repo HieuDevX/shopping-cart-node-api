@@ -31,6 +31,6 @@ services:
       - MONGO_INITDB_DATABASE=shopping
     volumes:
       - mongo-dev:/data/db
-      - ./DbInit:/docker-entrypoint-initdb.d
+      # - ./DbInit:/docker-entrypoint-initdb.d
 volumes:
   mongo-dev:
