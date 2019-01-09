@@ -9,6 +9,7 @@ const productSchema = new Schema({
   description: String,
   image: [String],
   imageSub: String,
+  keywords: [String],
   categoryId: mongoose.SchemaTypes.ObjectId
 });
 

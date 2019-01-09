@@ -74,6 +74,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg",
       "/static/img/product/pro-big-3.jpg"
     ],
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     imageSub: "/static/img/product/pro-big-1.jpg",
     categoryId: categories["insertedIds"][0]
   },
@@ -89,6 +92,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][0]
   },
   {
@@ -103,6 +109,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][1]
   },
   {
@@ -117,6 +126,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][1]
   },
   {
@@ -131,6 +143,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][2]
   },
   {
@@ -145,6 +160,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     categoryId: categories["insertedIds"][2]
   },
   {
@@ -159,6 +177,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][3]
   },
   {
@@ -173,6 +194,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][3]
   },
   {
@@ -187,6 +211,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][4]
   },
   {
@@ -201,6 +228,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][4]
   },
   {
@@ -215,6 +245,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     categoryId: categories["insertedIds"][5]
   },
   {
@@ -229,6 +262,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][5]
   },
   {
@@ -243,6 +279,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][6]
   },
   {
@@ -257,6 +296,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][6]
   },
   {
@@ -271,6 +313,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][7]
   },
   {
@@ -285,6 +330,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     categoryId: categories["insertedIds"][8]
   },
   {
@@ -299,6 +347,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][0]
   },
   {
@@ -313,6 +364,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][0]
   },
   {
@@ -327,6 +381,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][1]
   },
   {
@@ -341,6 +398,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][1]
   },
   {
@@ -355,6 +415,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     categoryId: categories["insertedIds"][2]
   },
   {
@@ -369,6 +432,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][2]
   },
   {
@@ -383,6 +449,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][3]
   },
   {
@@ -397,6 +466,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][3]
   },
   {
@@ -411,6 +483,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][4]
   },
   {
@@ -425,10 +500,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
-    categoryId: categories["insertedIds"][4]
-  },
-  {
-    name: "Cherie",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     price: 2000,
     status: true,
     description:
@@ -453,6 +527,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][5]
   },
   {
@@ -467,6 +544,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][6]
   },
   {
@@ -481,6 +561,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][6]
   },
   {
@@ -495,6 +578,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-3.jpg"
     ],
     imageSub: "/static/img/product/pro-big-1.jpg",
+    keywords: [
+      "Angil", "Phone6", "smartphone", "Apple"
+    ],
     categoryId: categories["insertedIds"][7]
   },
   {
@@ -509,6 +595,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-4.jpg",
+    keywords: [
+      "Cherie", "Lorem", "elit", "culpa"
+    ],
     categoryId: categories["insertedIds"][7]
   },
   {
@@ -523,6 +612,9 @@ products = db["products"].insertMany([
       "/static/img/product/product5.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Shirlee", "sit", "quidem", "nisi"
+    ],
     categoryId: categories["insertedIds"][8]
   },
   {
@@ -537,6 +629,9 @@ products = db["products"].insertMany([
       "/static/img/product/pro-big-2.jpg"
     ],
     imageSub: "/static/img/product/pro-big-3.jpg",
+    keywords: [
+      "MacCoughen", "Lorem", "sit", "haha"
+    ],
     categoryId: categories["insertedIds"][8]
   },
   {
@@ -551,6 +646,9 @@ products = db["products"].insertMany([
       "/static/img/product/product2.jpg"
     ],
     imageSub: "/static/img/product/product3.jpg",
+    keywords: [
+      "Guntar", "GGWP", "", "haha", "minions"
+    ],
     categoryId: categories["insertedIds"][8]
   }
 ]);

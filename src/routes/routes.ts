@@ -15,4 +15,10 @@ router
   .route("/products/byCategory/:categoryId")
   .get(ProductController.getProductsByCategoryId);
 
+router.route("/webproducts").get(ProductController.getAllWebProducts);
+router.route("/webproducts/:productId").get(ProductController.getWebProductById);
+router
+  .route("/webproducts/byCategory/:categoryId")
+  .get(ProductController.getWebProductsByCategoryId);
+
 export default router;
